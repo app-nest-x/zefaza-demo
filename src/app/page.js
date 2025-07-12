@@ -5,6 +5,10 @@ import { FeaturesSectionDemobysohail } from "@/components/DEMO/FeatureSectionDem
 import { FeaturesSectionDemoArbaaz } from "@/components/DEMO/FeaturesectionDemoo";
 import { TimelineDemo } from "@/components/DEMO/CustomtimeLineDemo";
 import { AuroraBackgroundDemo } from "@/components/DEMO/CustomHeroDemo";
+import CustomNavbarDemo from "@/components/DEMO/CustomNavbarDemo";
+import DnaNavbar from "@/components/DEMO/customSideNavDemo";
+import NeoLuxFooter from "@/components/DEMO/Footer";
+import FlashCartHero from "@/components/DEMO/TypeHero";
 
 export default function Home() {
   const [showContent, setShowContent] = useState(false);
@@ -21,11 +25,14 @@ export default function Home() {
       {/* Main Content */}
       {showContent && (
         <div>
+          <CustomNavbarDemo />
+          <DnaNavbar />
           <AuroraBackgroundDemo />
-          {/* <SparklesPreview /> */}
+          <FlashCartHero/>
           <FeaturesSectionDemobysohail />
           <FeaturesSectionDemoArbaaz />
           <TimelineDemo />
+          <NeoLuxFooter/>
         </div>
       )}
     </div>
